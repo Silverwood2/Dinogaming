@@ -1,0 +1,13 @@
+<div class="game">
+    <div class="ground" [style.backgroundPositionX.px]="groundX"></div>
+    <div class="dino" [style.bottom.px]="dinoY + 10"></div>
+  
+    <div
+      class="cactus"
+      *ngFor="let cactus of cactuses"
+      [style.left.px]="cactus.x"
+      [style.width.px]="cactus.width"
+      [style.height.px]="30" 
+    ></div>
+  </div>
+  
